@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar TailwindCSS</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- <style type="text/tailwindcss">
+      * {
+        border: 1px solid red;
+      } -->
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+
+            },
+            fontFamily: {
+              inter: ['Inter']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 class="text-8xl font-bold text-center my-10">Mari Belajar <span class="bg-gradient-to-r from-blue-500 to-teal-500 bg-clip-text text-transparent">TailwindCSS</span></h1>
+
+    <section class="mb-10 bg-gradient-to-r from-indigo-200 to border-l-amber-900">
+      <h2 class="text-3xl text-center">spacing</h2>
+      <div class="m-8 bg-yellow-100">Margin</div>
+      <div class="p-2 bg-green-200">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-yellow-300">
+      <h2 class="text-3xl text-center">Sizing</h2>
+      <div class="w-32 h-32 bg-red-300">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-x-3xl ml-3">
+      <h2 class="mb-1 text-4xl font-bold">Belajar Mengenai Typography pada TailwindCSS</h2>
+      <div class="mb-4 text-lg text-gray-500">By <a href="#" class="text-gray-700 font-semibold">Satriyo Rizkyansah</a>, 24 Juli 2024</div>
+      <p class="mb-4">Lorem ipsum dolor sit amet, <a href="#" class="underline font-semibold">consectetur</a> adipisicing elit. Unde non temporibus, rerum, harum molestiae voluptate deserunt dicta enim magnam labore magni reprehenderit soluta illo similique autem accusamus excepturi dignissimos. Fugiat quae vitae iusto libero at aspernatur debitis pariatur officiis rem ipsa cupiditate iure, quisquam fuga corporis totam aliquam alias! Eum!</p>
+
+      <blockquote class="mb-4 italic font-thin text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit sint nesciunt fugit voluptate ea eveniet ducimus assumenda deleniti laudantium aliquam mollitia quo delectus, voluptatibus nulla corporis architecto voluptatem fugiat? Consequatur?</blockquote>
+
+      <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nisi nesciunt vero expedita suscipit voluptas necessitatibus aperiam ipsa, modi quam?</p>
+    </section>
+  </body>
+</html>
